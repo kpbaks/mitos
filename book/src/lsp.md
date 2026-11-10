@@ -26,6 +26,8 @@ can run alongside it, for example Ruff for Python checking and formatting.
   Mitos tries `regols` first, then `regal language-server` with formatting
   enabled. Reorder the alternatives to prefer Regal. Project roots can contain
   `.regal/config.yaml` or `.regal.yaml`.
+- For LikeC4, install the [standalone language server](https://likec4.dev/tooling/editors/#standalone-language-server):
+  This provides the `likec4-lsp` executable used by Mitos.
 
 Run `ms --health kdl`, `ms --health hcl`, or `ms --health rego` to check the
 configured executables, then `:lsp-restart` after installing a server.

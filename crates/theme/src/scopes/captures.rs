@@ -124,6 +124,7 @@ pub const CAPTURES: &[&str] = &[
     "type",
     "type.alias.definition",
     "type.builtin",
+    "type.class",
     "type.class.definition",
     "type.definition",
     "type.enum",

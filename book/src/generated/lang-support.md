@@ -170,6 +170,7 @@
 | lean | ✓ |  |  |  |  | ✓ | `lake` |
 | ledger | ✓ |  |  |  |  |  |  |
 | less | ✓ |  | ✓ |  | ✓ |  | `vscode-css-language-server` |
+| likec4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | `likec4-lsp` |
 | llvm | ✓ | ✓ | ✓ |  |  |  |  |
 | llvm-mir | ✓ | ✓ | ✓ |  |  |  |  |
 | llvm-mir-yaml | ✓ |  | ✓ |  |  |  |  |

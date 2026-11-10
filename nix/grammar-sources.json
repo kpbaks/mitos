@@ -893,6 +893,12 @@
     "url": "https://github.com/jimliang/tree-sitter-less/archive/e5ae6245f841b5778c79ac93b28fa4f56b679c5d.tar.gz",
     "hash": "sha256-k0lt9l2Z/ttyWNK8iZ7XTB4MZdW6lJnqZCs7m4tYhgY="
   },
+  "likec4": {
+    "git": "https://github.com/Lenivvenil/tree-sitter-likec4",
+    "rev": "f49d5677c2da1baf918ed72791dcbbd606f8eb18",
+    "url": "https://github.com/Lenivvenil/tree-sitter-likec4/archive/f49d5677c2da1baf918ed72791dcbbd606f8eb18.tar.gz",
+    "hash": "sha256-/r1U12GrwrPtxyo0+qjHGqo7g8OOxV7ebGxW+PVNSR4="
+  },
   "llvm": {
     "git": "https://github.com/benwilliamgraham/tree-sitter-llvm",
     "rev": "2914786ae6774d4c4e25a230f4afe16aa68fe1c1",

@@ -1,0 +1,39 @@
+=31;OK\// Application architecture
+//^^^^^^^^^^^^^^^^^^^^^^^^^ @comment
+specification {
+// <- @keyword
+  element system
+//          ^ @type.class
+  relationship uses
+//               ^ @type.class
+  tag public
+//^ @keyword
+  color blue #0099ff
+//             ^ @constant.numeric
+}
+
+model {
+// <- @keyword
+  app = system "Application" {
+//    ^ @operator
+//        ^ @type
+    database = system "Database" #public
+//   ^ @label
+//                                ^ @tag
+    app -[uses]-> database "Reads and writes"
+//      ^^ @operator
+//        ^ @type
+  }
+}
+
+views {
+// <- @keyword
+  view index of app {
+// ^ @keyword
+//     ^ @label
+    include *
+//          ^ @operator
+    autoLayout LeftRight
+//             ^ @constant
+  }
+}

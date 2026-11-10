@@ -383,6 +383,11 @@ args = ["start", "--stdio"]
 command = "kcl-language-server"
 args = ["server", "--stdio"]
 
+# https://likec4.dev/tooling/editors/#standalone-language-server
+[language-server.likec4-lsp]
+command = "likec4-lsp"
+args = ["--stdio"]
+
 [language-server.drools-lsp]
 command = "drools-lsp"
 
@@ -5822,3 +5827,23 @@ comment-tokens = ["REM", "::"]
 [[grammar]]
 name = "batch"
 source = { git = "https://github.com/wharflab/tree-sitter-batch", rev = "2aa22f00d7f5bbe58556b8eef0b1fc1629508603" }
+
+[[language]]
+name = "likec4"
+scope = "source.likec4"
+injection-regex = "likec4"
+file-types = ["likec4", "c4"]
+comment-tokens = ["//"]
+block-comment-tokens = [{ start = "/*", end = "*/" }]
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["likec4-lsp"]
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+
+[[grammar]]
+name = "likec4"
+source = { git = "https://github.com/Lenivvenil/tree-sitter-likec4", rev = "f49d5677c2da1baf918ed72791dcbbd606f8eb18" }
