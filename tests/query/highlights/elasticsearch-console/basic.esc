@@ -1,0 +1,44 @@
+  GET /_search
+# ^^^ @keyword
+#     ^ @punctuation.delimiter
+#      ^^^^^^^ @function
+
+  GET kbn:/api/index_management/indices?from=0&size=1
+# ^^^ @keyword
+#     ^^^^ @function
+#         ^ @punctuation.delimiter
+#          ^^^ @function
+#              ^^^^^^^^^^^^^^^^ @function
+
+  GET /_search
+  {
+//^ @punctuation.bracket
+    "size": 1,
+//  ^^^^^^ @variable.other.member
+//        ^ @punctuation.delimiter
+//          ^ @constant.numeric
+//           ^ @punctuation.delimiter
+    "query": {
+//  ^^^^^^^ @variable.other.member
+//         ^ @punctuation.delimiter
+//           ^ @punctuation.bracket
+      "match": {
+//    ^^^^^^^ @variable.other.member
+//           ^ @punctuation.delimiter
+//             ^ @punctuation.bracket
+        "title": "mitos",
+//      ^^^^^^^ @variable.other.member
+//             ^ @punctuation.delimiter
+//               ^^^^^^^ @string
+//                      ^ @punctuation.delimiter
+        "enabled": true
+//      ^^^^^^^^^ @variable.other.member
+//               ^ @punctuation.delimiter
+//                 ^^^^ @constant.builtin.boolean
+      }
+    }
+  }
+
+  # TODO: check this request
+# ^ @comment
+#   ^^^^ @comment.info

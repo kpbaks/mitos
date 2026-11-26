@@ -1,0 +1,16 @@
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "title": "mitos"
+          }
+        }
+      ]
+    }
+  }
+}
+
+GET /_cat/indices

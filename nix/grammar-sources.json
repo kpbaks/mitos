@@ -359,6 +359,12 @@
     "url": "https://github.com/imustafin/tree-sitter-eiffel/archive/ec098b67b98b7f5da10f8d66bdb6c52fc91341fc.tar.gz",
     "hash": "sha256-jhBej5csysq0WEISkdiHcSq6JWhBkeLe0EwfdTXA7uY="
   },
+  "elasticsearch-console": {
+    "git": "https://github.com/elastic/tree-sitter-elasticsearch-console",
+    "rev": "bedc986f4a72cee6ca2f1ad3730dfd61eeb4c054",
+    "url": "https://github.com/elastic/tree-sitter-elasticsearch-console/archive/bedc986f4a72cee6ca2f1ad3730dfd61eeb4c054.tar.gz",
+    "hash": "sha256-G62y+Pc1lNgoY/k+XGEOAh6dgGuZcPAgj0Do/QCeJqE="
+  },
   "elisp": {
     "git": "https://github.com/Wilfred/tree-sitter-elisp",
     "rev": "0cbf0906d9ee707c8c109422fba9cdd17ae13dcf",

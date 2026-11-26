@@ -5864,3 +5864,17 @@ language-servers = ["strz"]
 [[grammar]]
 name = "structurizr"
 source = { git = "https://github.com/sinon/tree-sitter-structurizr", rev = "301152e1207534e792c0cd0aaea3436e2e26984c", subpath = "crates/strz-grammar" }
+
+# https://www.elastic.co/docs/explore-analyze/query-filter/tools/console
+[[language]]
+name = "elasticsearch-console"
+scope = "source.elasticsearch-console"
+injection-regex = "(elasticsearch-console|kibana)"
+comment-tokens = ["#", "//"]
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 2, unit = "  " }
+file-types = ["esc"]
+
+[[grammar]]
+name = "elasticsearch-console"
+source = { git = "https://github.com/elastic/tree-sitter-elasticsearch-console", rev = "bedc986f4a72cee6ca2f1ad3730dfd61eeb4c054" }

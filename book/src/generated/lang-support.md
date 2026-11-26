@@ -69,6 +69,7 @@
 | eex | ✓ |  |  |  |  |  |  |
 | eiffel | ✓ | ✓ | ✓ |  |  |  | `eiffel-language-server` |
 | ejs | ✓ |  |  |  |  |  |  |
+| elasticsearch-console | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | elisp | ✓ |  |  | ✓ |  | ✓ |  |
 | elixir | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | first available: `elixir-ls` → `expert` |
 | elm | ✓ | ✓ |  | ✓ | ✓ | ✓ | `elm-language-server` |
